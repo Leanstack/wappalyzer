@@ -66,7 +66,7 @@ Wappalyzer::Detector.new.analyze(url)
       "version" => ""
   }
 }
-```
+``` 
 
 
 
