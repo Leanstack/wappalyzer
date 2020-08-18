@@ -13,8 +13,6 @@ Gem::Specification.new do |spec|
   spec.description   = %q{This analyzes a url and tries to guess what software it uses (like server software, CMS, framework, programming language).}
   spec.homepage      = "https://github.com/pulkit21/wappalyzer"
 
-
-
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
@@ -22,6 +20,6 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "bundler"
   spec.add_dependency "rake"
-  spec.add_dependency "rspec", "~> 3.0"
-  spec.add_dependency "mini_racer", "~> 0.2.0"
+  spec.add_dependency "rspec"
+  spec.add_dependency "mini_racer"
 end
